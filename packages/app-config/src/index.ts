@@ -4,13 +4,13 @@
  *
  * appId is the Expo/iOS/Android bundle identifier. It cannot change
  * after the first store release, so treat it as locked once mobile ships.
- * "name" below is a placeholder segment — swap it once the product name
- * is finalized (see the decision log for naming status).
+ * The name is set, but domain/trademark research is still pending
+ * (see the decision log), so this stays easy to revisit before launch.
  */
 export const appConfig = {
-  displayName: "Wegweiser",
-  appId: "com.name.wegweiser",
-  urlScheme: "wegweiser",
+  displayName: "Paperaid",
+  appId: "com.name.paperaid",
+  urlScheme: "paperaid",
 } as const;
 
 export type AppConfig = typeof appConfig;

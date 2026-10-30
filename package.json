@@ -1,5 +1,5 @@
 {
-  "name": "wegweiser",
+  "name": "paperaid",
   "private": true,
   "packageManager": "pnpm@12.8.1",
   "engines": {

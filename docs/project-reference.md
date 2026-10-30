@@ -1,12 +1,12 @@
-# Wegweiser — Project Reference
+# Paperaid — Project Reference
 
 Sep 30, 2026 · @Rachael
 
 ## About the project
 
-Wegweiser is a web and mobile app that turns German bureaucracy into clear, calm, step-by-step guides for immigrants. It is also my learning project across frontend, mobile, backend, infrastructure and CI/CD, and I may open source it.
+Paperaid is a web and mobile app that turns German bureaucracy into clear, calm, step-by-step guides for immigrants. It is also my learning project across frontend, mobile, backend, infrastructure and CI/CD, and I may open source it.
 
-**Name:** Wegweiser ("signpost") is a placeholder. I will check domains, app store names and trademarks (DPMA, EUIPO) before choosing the real name.
+**Name:** Paperaid. It replaces the placeholder Wegweiser. I will hold off on buying domains or filing a trademark until the idea and the learning project prove themselves. When I do: paperaid.de first, maybe .app, and skip .com for now. Before spending on branding, I will search DPMAregister and TMview in classes 9 and 42.
 
 **Mission:** Make German bureaucracy understandable for immigrants. Take official information that is scattered, dense and often only in German, and turn it into guides that feel calm to use.
 
@@ -71,10 +71,10 @@ TypeScript everywhere. "Carries over" means I use it today; "Swap" replaces some
 
 ## Repo structure
 
-One monorepo using Turborepo and pnpm workspaces, on Node 24 LTS. Package scope is `@wegweiser/*`.
+One monorepo using Turborepo and pnpm workspaces, on Node 24 LTS. Package scope is `@paperaid/*`.
 
 ```
-wegweiser/
+paperaid/
   apps/
     web/                 React Router 7 (framework mode)
     mobile/              Expo (later)
@@ -91,7 +91,7 @@ wegweiser/
   turbo.json
 ```
 
-**Renaming later:** keep the display name, app ID and URL scheme in one shared config file. The Expo bundle ID (for example `com.yourname.wegweiser`) cannot change after the first store release, so settle it before then.
+**Renaming later:** keep the display name, app ID and URL scheme in one shared config file. The Expo bundle ID (for example `com.yourname.paperaid`) cannot change after the first store release, so settle it before then.
 
 **Mobile note:** React Native in a pnpm monorepo may need `node-linker=hoisted` in `.npmrc`. Check the current Expo monorepo docs when adding `apps/mobile`.
 
@@ -178,8 +178,7 @@ Add a row whenever I make a choice I might question later. Newest first.
 
 | Date | Decision | Why |
 | --- | --- | --- |
-| 2026-09-30 | Package scope `@wegweiser/*`, shared `app-config` package holds display name, app ID and URL scheme | Web and Expo both read one source of truth; avoids drift when renaming |
-| 2026-09-30 | Expo bundle ID placeholder `com.name.wegweiser` | Bundle ID is locked after first store release; keep it neutral until the real name is chosen |
+| 2026-10-02 | Name the app "Paperaid" | Clear, says what it does, and works for everyone, not just immigrants. Domains and trademark wait until the idea proves itself |
 | 2026-09-30 | Use "Wegweiser" as a placeholder name | Research the real name later; keep it easy to rename |
 | 2026-09-30 | Monorepo with Turborepo + pnpm | Share types, content and tokens across web, mobile and API |
 | 2026-09-30 | React Router 7 framework mode for web | Builds on what I know; adds SSR and prerendering for SEO |
