@@ -6,7 +6,7 @@ Sep 30, 2026 · @Rachael
 
 Paperaid is a web and mobile app that turns German bureaucracy into clear, calm, step-by-step guides for immigrants. It is also my learning project across frontend, mobile, backend, infrastructure and CI/CD, and I may open source it.
 
-**Name:** Paperaid. It replaces the placeholder Wegweiser. I will hold off on buying domains or filing a trademark until the idea and the learning project prove themselves. When I do: paperaid.de first, maybe .app, and skip .com for now. Before spending on branding, I will search DPMAregister and TMview in classes 9 and 42.
+**Name:** Paperaid. I will hold off on buying domains or filing a trademark until the idea and the learning project prove themselves. When I do: paperaid.de first, maybe .app, and skip .com for now. Before spending on branding, I will search DPMAregister and TMview in classes 9 and 42.
 
 **Mission:** Make German bureaucracy understandable for immigrants. Take official information that is scattered, dense and often only in German, and turn it into guides that feel calm to use.
 
@@ -179,7 +179,6 @@ Add a row whenever I make a choice I might question later. Newest first.
 | Date | Decision | Why |
 | --- | --- | --- |
 | 2026-10-02 | Name the app "Paperaid" | Clear, says what it does, and works for everyone, not just immigrants. Domains and trademark wait until the idea proves itself |
-| 2026-09-30 | Use "Wegweiser" as a placeholder name | Research the real name later; keep it easy to rename |
 | 2026-09-30 | Monorepo with Turborepo + pnpm | Share types, content and tokens across web, mobile and API |
 | 2026-09-30 | React Router 7 framework mode for web | Builds on what I know; adds SSR and prerendering for SEO |
 | 2026-09-30 | Expo for mobile | Reuses React skills; strong tooling for builds and updates |
