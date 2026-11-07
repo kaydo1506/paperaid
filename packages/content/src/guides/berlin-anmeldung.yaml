@@ -1,0 +1,62 @@
+# Sample content for exercising the guide schema and its tests.
+# Not reviewed, verified guidance. Replace with real, fact-checked
+# content (including the exact official source URL) before publishing.
+# See the roadmap item "Write the first Berlin guides".
+
+slug: berlin-anmeldung
+city: berlin
+
+title:
+  en: Register your address in Berlin (Anmeldung)
+  de: Wohnsitz in Berlin anmelden (Anmeldung)
+
+summary:
+  en: Register your new address with the city within 14 days of moving in.
+  de: Melde deinen neuen Wohnsitz innerhalb von 14 Tagen nach dem Einzug an.
+
+officialSourceUrl: https://www.berlin.de
+
+lastChecked: "2026-10-30"
+
+cost:
+  en: Free
+  de: Kostenlos
+
+timeline:
+  en: Register within 14 days of moving in. Book an appointment early, slots fill up fast.
+  de: Innerhalb von 14 Tagen nach dem Einzug anmelden. Termine frühzeitig buchen, sie sind schnell ausgebucht.
+
+whereToGo:
+  en: Any Bürgeramt (citizens' office) in Berlin, by appointment.
+  de: Jedes Bürgeramt in Berlin, nach Terminvereinbarung.
+
+requiredDocuments:
+  - en: Valid passport or ID card
+    de: Gültiger Reisepass oder Personalausweis
+  - en: Completed registration form (Anmeldeformular)
+    de: Ausgefülltes Anmeldeformular
+  - en: Confirmation of moving in from your landlord (Wohnungsgeberbestätigung)
+    de: Wohnungsgeberbestätigung
+
+steps:
+  - id: book-appointment
+    title:
+      en: Book a Bürgeramt appointment
+      de: Termin beim Bürgeramt buchen
+    description:
+      en: Appointments open roughly four weeks ahead and get booked quickly, so check often.
+      de: Termine werden etwa vier Wochen im Voraus freigeschaltet und sind schnell vergeben, also regelmäßig prüfen.
+  - id: gather-documents
+    title:
+      en: Gather your documents
+      de: Unterlagen zusammenstellen
+    description:
+      en: Get the Wohnungsgeberbestätigung from your landlord before your appointment.
+      de: Hole dir die Wohnungsgeberbestätigung vor deinem Termin von deinem Vermieter.
+  - id: attend-appointment
+    title:
+      en: Attend your appointment
+      de: Zum Termin erscheinen
+    description:
+      en: Bring all documents. You'll leave with a registration confirmation (Meldebestätigung).
+      de: Bringe alle Unterlagen mit. Du erhältst eine Meldebestätigung.
