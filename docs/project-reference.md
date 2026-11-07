@@ -36,34 +36,34 @@ Milestone 1 is content-first: a beautiful, easy UI over official information, wi
 
 TypeScript everywhere. "Carries over" means I use it today; "Swap" replaces something I use today; "New" is growth.
 
-| Area | Tool | Status | Why |
-| --- | --- | --- | --- |
-| Language | TypeScript | Carries over | One language across web, mobile, API and content |
-| Web framework | React Router 7, framework mode, on Vite | Swap (from SPA mode) | Prerendered pages for SEO; teaches SSR, loaders, actions |
-| React | React 19 | Swap (from 18) | Required by Expo; keep web and mobile aligned |
-| Mobile | Expo, React Native, Expo Router, EAS | New | Reuses React skills; one team, two platforms |
-| Styling | Tailwind (web), NativeWind (mobile), shared design tokens | Carries over | Same styling model on both platforms |
-| Components | Radix primitives, shadcn/ui style | Swap (from MUI + Emotion) | MUI doesn't run on React Native and looks like an admin tool |
-| Icons | lucide-react, lucide-react-native | Carries over | Matching icons on both platforms |
-| Motion | Framer Motion (web), Reanimated (mobile) | New | Calm, guided transitions |
-| Illustrations | Rive | New | Friendly animated guides |
-| Server state | TanStack Query | Swap (from Redux Toolkit) | Works on both platforms; common in job ads |
-| Local state | Zustand, persisted on device | Swap (from Redux Toolkit) | Small and simple for checklist progress |
-| Validation | Zod | Swap (from ajv) | Content schemas and forms; can output JSON Schema |
-| Content | MDX/YAML in the repo, parsed with remark/rehype at build time | Carries over | Guides reviewed like code via pull requests |
-| i18n | i18next | New | Works on web and mobile |
-| Search | Orama | New | In-app search with no server |
-| Dates | date-fns | Carries over | Deadlines like "register within 14 days" |
-| PDF | @react-pdf/renderer (web), expo-print (mobile) | Carries over | Printable document checklists |
-| API mocking | msw | Carries over | Build UI before the API exists |
-| API (from M2) | Hono + typed client | New (replaces axios) | Small API with end-to-end types |
-| Database (from M2) | PostgreSQL + Drizzle, Neon or Supabase in the EU | New | Learn real SQL; GDPR-friendly hosting |
-| Auth (from M2) | Better Auth or Supabase Auth | New | Accounts and synced progress |
-| Push (from M2) | Expo Push Notifications | New | Reminders, like permit expiry |
-| Web hosting | Vercel or Cloudflare Pages | New | Preview link on every PR |
-| API hosting | Docker on Hetzner | New | Real infra learning; German, cheap |
-| Monitoring | Sentry; Plausible or PostHog (EU) | New | Errors and privacy-friendly analytics |
-| Design | Figma | — | Tokens can sync into code |
+| Area               | Tool                                                          | Status                    | Why                                                          |
+| ------------------ | ------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------ |
+| Language           | TypeScript                                                    | Carries over              | One language across web, mobile, API and content             |
+| Web framework      | React Router 7, framework mode, on Vite                       | Swap (from SPA mode)      | Prerendered pages for SEO; teaches SSR, loaders, actions     |
+| React              | React 19                                                      | Swap (from 18)            | Required by Expo; keep web and mobile aligned                |
+| Mobile             | Expo, React Native, Expo Router, EAS                          | New                       | Reuses React skills; one team, two platforms                 |
+| Styling            | Tailwind (web), NativeWind (mobile), shared design tokens     | Carries over              | Same styling model on both platforms                         |
+| Components         | Radix primitives, shadcn/ui style                             | Swap (from MUI + Emotion) | MUI doesn't run on React Native and looks like an admin tool |
+| Icons              | lucide-react, lucide-react-native                             | Carries over              | Matching icons on both platforms                             |
+| Motion             | Framer Motion (web), Reanimated (mobile)                      | New                       | Calm, guided transitions                                     |
+| Illustrations      | Rive                                                          | New                       | Friendly animated guides                                     |
+| Server state       | TanStack Query                                                | Swap (from Redux Toolkit) | Works on both platforms; common in job ads                   |
+| Local state        | Zustand, persisted on device                                  | Swap (from Redux Toolkit) | Small and simple for checklist progress                      |
+| Validation         | Zod                                                           | Swap (from ajv)           | Content schemas and forms; can output JSON Schema            |
+| Content            | MDX/YAML in the repo, parsed with remark/rehype at build time | Carries over              | Guides reviewed like code via pull requests                  |
+| i18n               | i18next                                                       | New                       | Works on web and mobile                                      |
+| Search             | Orama                                                         | New                       | In-app search with no server                                 |
+| Dates              | date-fns                                                      | Carries over              | Deadlines like "register within 14 days"                     |
+| PDF                | @react-pdf/renderer (web), expo-print (mobile)                | Carries over              | Printable document checklists                                |
+| API mocking        | msw                                                           | Carries over              | Build UI before the API exists                               |
+| API (from M2)      | Hono + typed client                                           | New (replaces axios)      | Small API with end-to-end types                              |
+| Database (from M2) | PostgreSQL + Drizzle, Neon or Supabase in the EU              | New                       | Learn real SQL; GDPR-friendly hosting                        |
+| Auth (from M2)     | Better Auth or Supabase Auth                                  | New                       | Accounts and synced progress                                 |
+| Push (from M2)     | Expo Push Notifications                                       | New                       | Reminders, like permit expiry                                |
+| Web hosting        | Vercel or Cloudflare Pages                                    | New                       | Preview link on every PR                                     |
+| API hosting        | Docker on Hetzner                                             | New                       | Real infra learning; German, cheap                           |
+| Monitoring         | Sentry; Plausible or PostHog (EU)                             | New                       | Errors and privacy-friendly analytics                        |
+| Design             | Figma                                                         | —                         | Tokens can sync into code                                    |
 
 **Not needed for Milestone 1:** ECharts, Tiptap, TanStack Table, dnd-kit, tus-js-client, react-joyride. On mobile, simple onboarding screens replace a product tour.
 
@@ -111,29 +111,29 @@ Every change goes through a short-lived branch and a pull request, even when wor
 
 GitHub Actions runs checks on every pull request and push to `main`. Turborepo caches results so unchanged packages are skipped.
 
-| When | What runs |
-| --- | --- |
-| Every PR and push to `main` | Install (frozen lockfile), then lint, typecheck, test, build |
-| Every PR | Content check: every guide validated against its Zod schema |
-| Every PR | Web preview deploy (Vercel or Cloudflare Pages) |
-| Every PR, once mobile exists | EAS preview build |
-| Merge to `main` | Web goes live |
-| Version tag | Mobile store release via EAS Submit; quick fixes via EAS Update |
-| Merge to `main`, once API exists | Build Docker image, deploy API to Hetzner |
-| Weekly schedule | Link checker on every official source URL, to catch outdated guides |
+| When                             | What runs                                                           |
+| -------------------------------- | ------------------------------------------------------------------- |
+| Every PR and push to `main`      | Install (frozen lockfile), then lint, typecheck, test, build        |
+| Every PR                         | Content check: every guide validated against its Zod schema         |
+| Every PR                         | Web preview deploy (Vercel or Cloudflare Pages)                     |
+| Every PR, once mobile exists     | EAS preview build                                                   |
+| Merge to `main`                  | Web goes live                                                       |
+| Version tag                      | Mobile store release via EAS Submit; quick fixes via EAS Update     |
+| Merge to `main`, once API exists | Build Docker image, deploy API to Hetzner                           |
+| Weekly schedule                  | Link checker on every official source URL, to catch outdated guides |
 
 The current workflow lives in `.github/workflows/ci.yml` and uses `actions/checkout`, `pnpm/action-setup` (reads the pnpm version from `packageManager`) and `actions/setup-node` (reads `.nvmrc`).
 
 ## Testing and quality
 
-| Layer | Web and shared packages | Mobile |
-| --- | --- | --- |
-| Unit and component | Vitest + Testing Library | Jest (jest-expo) + React Native Testing Library |
-| End-to-end | Playwright | Maestro |
-| Components in isolation | Storybook | Storybook for React Native (optional) |
-| Accessibility | axe | Manual checks with VoiceOver and TalkBack |
-| API mocking | msw | msw |
-| Errors in production | Sentry | Sentry |
+| Layer                   | Web and shared packages  | Mobile                                          |
+| ----------------------- | ------------------------ | ----------------------------------------------- |
+| Unit and component      | Vitest + Testing Library | Jest (jest-expo) + React Native Testing Library |
+| End-to-end              | Playwright               | Maestro                                         |
+| Components in isolation | Storybook                | Storybook for React Native (optional)           |
+| Accessibility           | axe                      | Manual checks with VoiceOver and TalkBack       |
+| API mocking             | msw                      | msw                                             |
+| Errors in production    | Sentry                   | Sentry                                          |
 
 Accessibility matters a lot for this audience: many users read in a second language, some on older phones.
 
@@ -157,7 +157,7 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 - [x] Monorepo: pnpm workspaces, Turborepo, shared TypeScript config
 - [ ] Web app: React Router 7 in `apps/web`
 - [ ] Content package with the first guide schema
-- [ ] Git hooks: Husky, lint-staged, commitlint
+- [x] Git hooks: Husky, lint-staged, commitlint
 - [ ] First CI run and branch protection on `main`
 - [ ] Shared ESLint config package
 - [ ] Design tokens package
