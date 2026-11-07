@@ -158,7 +158,8 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 - [ ] Web app: React Router 7 in `apps/web`
 - [ ] Content package with the first guide schema
 - [x] Git hooks: Husky, lint-staged, commitlint
-- [ ] First CI run and branch protection on `main`
+- [x] First CI run on `main` ([CI workflow](../.github/workflows/ci.yml): install, lint, typecheck, test, build)
+- [ ] Branch protection on `main` — blocked: GitHub only allows this on private repos with a paid plan; revisit after upgrading or open-sourcing
 - [ ] Shared ESLint config package
 - [ ] Design tokens package
 - [ ] Mobile app: Expo in `apps/mobile`
@@ -176,13 +177,13 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 
 Add a row whenever I make a choice I might question later. Newest first.
 
-| Date | Decision | Why |
-| --- | --- | --- |
-| 2026-10-02 | Name the app "Paperaid" | Clear, says what it does, and works for everyone, not just immigrants. Domains and trademark wait until the idea proves itself |
-| 2026-09-30 | Monorepo with Turborepo + pnpm | Share types, content and tokens across web, mobile and API |
-| 2026-09-30 | React Router 7 framework mode for web | Builds on what I know; adds SSR and prerendering for SEO |
-| 2026-09-30 | Expo for mobile | Reuses React skills; strong tooling for builds and updates |
-| 2026-09-30 | Drop MUI for Radix + Tailwind | MUI doesn't run on React Native; want a calmer, custom look |
-| 2026-09-30 | Content in the repo, not a CMS | Open-source friendly; guides reviewed like code |
-| 2026-09-30 | No backend in Milestone 1 | Not needed yet; keeps launch simple and private |
-| 2026-09-30 | Start with Berlin and Nigerian users | Rules vary by city; build for a community I know first |
+| Date       | Decision                              | Why                                                                                                                            |
+| ---------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| 2026-10-02 | Name the app "Paperaid"               | Clear, says what it does, and works for everyone, not just immigrants. Domains and trademark wait until the idea proves itself |
+| 2026-09-30 | Monorepo with Turborepo + pnpm        | Share types, content and tokens across web, mobile and API                                                                     |
+| 2026-09-30 | React Router 7 framework mode for web | Builds on what I know; adds SSR and prerendering for SEO                                                                       |
+| 2026-09-30 | Expo for mobile                       | Reuses React skills; strong tooling for builds and updates                                                                     |
+| 2026-09-30 | Drop MUI for Radix + Tailwind         | MUI doesn't run on React Native; want a calmer, custom look                                                                    |
+| 2026-09-30 | Content in the repo, not a CMS        | Open-source friendly; guides reviewed like code                                                                                |
+| 2026-09-30 | No backend in Milestone 1             | Not needed yet; keeps launch simple and private                                                                                |
+| 2026-09-30 | Start with Berlin and Nigerian users  | Rules vary by city; build for a community I know first                                                                         |
