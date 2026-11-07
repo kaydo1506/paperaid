@@ -156,7 +156,7 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 
 - [x] Monorepo: pnpm workspaces, Turborepo, shared TypeScript config
 - [ ] Web app: React Router 7 in `apps/web`
-- [ ] Content package with the first guide schema
+- [x] Content package with the first guide schema
 - [x] Git hooks: Husky, lint-staged, commitlint
 - [x] First CI run on `main` ([CI workflow](../.github/workflows/ci.yml): install, lint, typecheck, test, build)
 - [ ] Branch protection on `main` — blocked: GitHub only allows this on private repos with a paid plan; revisit after upgrading or open-sourcing
