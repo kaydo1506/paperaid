@@ -1,6 +1,6 @@
 # Paperaid
 
-Paperaid turns German bureaucracy into clear, calm, step-by-step guides for immigrants. Domain and trademark research are on hold until the idea proves itself — see `docs/project-reference.md`.
+Paperaid turns German bureaucracy into clear, calm, step-by-step guides for immigrants. Domain and trademark research are on hold until the idea proves itself; see `docs/project-reference.md`.
 
 ## Status
 
