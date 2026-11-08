@@ -23,3 +23,7 @@ export function loadGuides(): Guide[] {
     return result.data;
   });
 }
+
+export function getGuideBySlug(slug: string): Guide | undefined {
+  return loadGuides().find((guide) => guide.slug === slug);
+}
