@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { loadGuides } from "./load-guides";
+import { getGuideBySlug, loadGuides } from "./load-guides";
 
 describe("loadGuides", () => {
   it("loads and validates every guide against the schema", () => {
@@ -13,5 +13,17 @@ describe("loadGuides", () => {
     const slugs = guides.map((guide) => guide.slug);
 
     expect(new Set(slugs).size).toBe(slugs.length);
+  });
+});
+
+describe("getGuideBySlug", () => {
+  it("returns the matching guide", () => {
+    const guide = getGuideBySlug("berlin-anmeldung");
+
+    expect(guide?.slug).toBe("berlin-anmeldung");
+  });
+
+  it("returns undefined for an unknown slug", () => {
+    expect(getGuideBySlug("not-a-real-guide")).toBeUndefined();
   });
 });

@@ -1,4 +1,5 @@
 import { appConfig } from "@paperaid/app-config";
+import { Link } from "react-router";
 
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
@@ -14,5 +15,14 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      <Welcome />
+      <p className="text-center">
+        <Link to="/guides/berlin-anmeldung" className="underline">
+          Try the Anmeldung guide
+        </Link>
+      </p>
+    </>
+  );
 }
