@@ -1,0 +1,16 @@
+/*
+ * Seed of the future design-tokens package. Scoped to just what
+ * light/dark theming needs today. Add more semantic tokens here
+ * (spacing, type scale, brand colors) as the real design-tokens
+ * package grows; nothing elsewhere needs to change when it does.
+ */
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #030712;
+}
+
+:root[data-theme="dark"] {
+  --color-background: #030712;
+  --color-foreground: #f9fafb;
+  color-scheme: dark;
+}

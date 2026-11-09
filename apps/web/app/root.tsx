@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { getNoFlashScript } from "./theme/no-flash-script";
+import { ThemeToggle } from "./theme/theme-toggle";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -29,10 +31,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script dangerouslySetInnerHTML={{ __html: getNoFlashScript() }} />
         <Meta />
         <Links />
       </head>
       <body>
+        <div className="fixed top-4 right-4 z-10">
+          <ThemeToggle />
+        </div>
         {children}
         <ScrollRestoration />
         <Scripts />
