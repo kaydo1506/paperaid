@@ -1,8 +1,6 @@
-# Welcome to React Router!
+# @paperaid/web
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+The Paperaid web app: React Router 7 in framework mode, part of the [Paperaid](../../README.md) monorepo.
 
 ## Features
 
@@ -16,30 +14,26 @@ A modern, production-ready template for building full-stack React applications u
 
 ## Getting Started
 
+Run these from the repo root (this is a pnpm workspace):
+
 ### Installation
 
-Install the dependencies:
-
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
 
-Start the development server with HMR:
-
 ```bash
-npm run dev
+pnpm --filter @paperaid/web dev
 ```
 
 Your application will be available at `http://localhost:5173`.
 
 ## Building for Production
 
-Create a production build:
-
 ```bash
-npm run build
+pnpm --filter @paperaid/web build
 ```
 
 ## Deployment
@@ -68,11 +62,11 @@ The containerized application can be deployed to any platform that supports Dock
 
 If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
-Make sure to deploy the output of `npm run build`
+Make sure to deploy the output of `pnpm --filter @paperaid/web build`
 
 ```
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
+├── pnpm-lock.yaml
 ├── build/
 │   ├── client/    # Static assets
 │   └── server/    # Server-side code
@@ -80,8 +74,4 @@ Make sure to deploy the output of `npm run build`
 
 ## Styling
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+[Tailwind CSS](https://tailwindcss.com/) is configured, with the dark/light theme variant driven by `@paperaid/ui-tokens` (see `app/theme/`).
