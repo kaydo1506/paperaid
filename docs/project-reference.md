@@ -4,7 +4,7 @@ Sep 30, 2026 · @Rachael
 
 ## About the project
 
-Paperaid is a web and mobile app that turns German bureaucracy into clear, calm, step-by-step guides for immigrants. It is also my learning project across frontend, mobile, backend, infrastructure and CI/CD, and I may open source it.
+Paperaid is a web and mobile app that turns German bureaucracy into clear, step-by-step guides for immigrants, starting with Berlin. I am building it to grow across the full product: frontend, mobile, backend, CI/CD and LLM integration. I plan to add an AI assistant that uses retrieval-augmented generation (RAG): it finds the right guides first, then answers from them and links to the official source.
 
 **Name:** Paperaid. I will hold off on buying domains or filing a trademark until the idea and the learning project prove themselves. When I do: paperaid.de first, maybe .app, and skip .com for now. Before spending on branding, I will search DPMAregister and TMview in classes 9 and 42.
 
@@ -172,6 +172,7 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 - Accounts and synced progress
 - Reminders, like residence permit expiry
 - More cities and more languages
+- AI assistant using retrieval-augmented generation (RAG) over the guides, always answering from them and citing the official source
 
 ## Decision log
 

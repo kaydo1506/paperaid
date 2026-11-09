@@ -1,6 +1,6 @@
 # Paperaid
 
-Paperaid turns German bureaucracy into clear, calm, step-by-step guides for immigrants. Domain and trademark research are on hold until the idea proves itself; see `docs/project-reference.md`.
+Paperaid is a web and mobile app that turns German bureaucracy into clear, step-by-step guides for immigrants, starting with Berlin. It's also a growing full-stack project: frontend, mobile, backend, CI/CD and LLM integration, with a retrieval-augmented generation (RAG) assistant planned on top of the guides. Domain and trademark research are on hold until the idea proves itself; see `docs/project-reference.md`.
 
 ## Status
 
@@ -12,10 +12,14 @@ pnpm workspaces + Turborepo, Node 24 LTS.
 
 ```
 paperaid/
-  apps/                 web, mobile, api (added as they're built)
+  apps/
+    web/                 React Router 7 web app
+    mobile/, api/        added as they're built
   packages/
-    app-config/         shared display name, app ID, URL scheme
-    typescript-config/  shared tsconfig base
+    app-config/          shared display name, app ID, URL scheme
+    content/             guides + Zod schemas
+    typescript-config/   shared tsconfig base
+    ui-tokens/           theme tokens + logic (seed of future design tokens)
 ```
 
 ## Getting started
