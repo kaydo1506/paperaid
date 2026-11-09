@@ -82,7 +82,7 @@ paperaid/
   packages/
     typescript-config/   shared tsconfig (base.json)
     content/             guides + Zod schemas
-    ui-tokens/           shared design tokens (later)
+    ui-tokens/           theme (light/dark) tokens + logic now; grows into full design tokens later
     eslint-config/       shared lint rules (later)
   .github/workflows/     CI
   .husky/                git hooks

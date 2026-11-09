@@ -1,15 +1,21 @@
 @import "tailwindcss";
+@import "@paperaid/ui-tokens/theme.css";
+
+/*
+ * dark: utilities respond to the explicit data-theme attribute (set
+ * by the theme toggle / no-flash script) instead of only following
+ * prefers-color-scheme, so a user's explicit choice can override
+ * their system setting. color-scheme itself is set in theme.css.
+ */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
 body {
   @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
 }
