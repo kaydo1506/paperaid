@@ -159,7 +159,7 @@ New tools come in one at a time: web first on familiar ground, then mobile, then
 - [x] Content package with the first guide schema
 - [x] Git hooks: Husky, lint-staged, commitlint
 - [x] First CI run on `main` ([CI workflow](../.github/workflows/ci.yml): install, lint, typecheck, test, build)
-- [ ] Branch protection on `main` — blocked: GitHub only allows this on private repos with a paid plan; revisit after upgrading or open-sourcing
+- [x] Branch protection on `main` — requires a PR and a passing `check` job; unblocked by open-sourcing the repo
 - [ ] Shared ESLint config package
 - [ ] Design tokens package
 - [ ] Mobile app: Expo in `apps/mobile`
@@ -179,6 +179,7 @@ Add a row whenever I make a choice I might question later. Newest first.
 
 | Date       | Decision                              | Why                                                                                                                            |
 | ---------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| 2026-11-09 | Made the GitHub repo public           | Unblocks free branch protection on `main`. Open source readiness checklist (license, CONTRIBUTING, etc.) is still pending      |
 | 2026-10-02 | Name the app "Paperaid"               | Clear, says what it does, and works for everyone, not just immigrants. Domains and trademark wait until the idea proves itself |
 | 2026-09-30 | Monorepo with Turborepo + pnpm        | Share types, content and tokens across web, mobile and API                                                                     |
 | 2026-09-30 | React Router 7 framework mode for web | Builds on what I know; adds SSR and prerendering for SEO                                                                       |
