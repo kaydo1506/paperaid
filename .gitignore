@@ -9,3 +9,4 @@ dist/
 .expo/
 .vercel/
 coverage/
+.progress.md
